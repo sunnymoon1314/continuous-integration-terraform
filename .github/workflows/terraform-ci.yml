@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # Can we remove the name attribute and use - uses: actions/checkout@v3???
     - name: Checkout
       uses: actions/checkout@v3
 
