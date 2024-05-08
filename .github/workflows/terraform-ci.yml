@@ -29,7 +29,9 @@ jobs:
 
     - name: Terraform fmt
       id: fmt
-      run: terraform fmt -check
+      # https://github.com/Azure-Samples/terraform-github-actions/issues/20
+      # run: terraform fmt -check
+      run: terraform fmt -recursive
 
     - name: Terraform Init
       id: init
